@@ -1,0 +1,8 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//iPhone OS 27.0//EN
+N:;Adrian Asesor Uso;;;
+FN:Adrian Asesor Uso
+item1.TEL;type=pref:+34656880511
+item1.X-ABLabel:Móvil
+END:VCARD

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#b5122b">
+  <title>Contactos asesores | USO Canarias</title>
+  <style>
+    :root { color-scheme: light; --red:#b5122b; --dark:#202124; --muted:#62666d; --bg:#f5f6f8; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; padding: 28px 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--dark); background: linear-gradient(160deg, #fff 0%, var(--bg) 70%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    main { width: 100%; max-width: 480px; }
+    .brand { text-align: center; margin-bottom: 26px; }
+    .mark {
+      width: 64px; height: 64px; margin: 0 auto 14px; border-radius: 18px;
+      display: grid; place-items: center; background: var(--red); color: white;
+      font-size: 27px; font-weight: 800; box-shadow: 0 8px 22px #b5122b30;
+    }
+    h1 { margin: 0; font-size: clamp(25px, 6vw, 32px); letter-spacing: -.6px; }
+    .subtitle { margin: 9px 0 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
+    .cards { display: grid; gap: 12px; }
+    .contact {
+      display: flex; align-items: center; gap: 14px; padding: 17px;
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 16px;
+      color: inherit; text-decoration: none; box-shadow: 0 3px 12px #11111108;
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    .contact:hover, .contact:focus-visible { border-color: var(--red); transform: translateY(-1px); outline: none; }
+    .avatar {
+      flex: 0 0 48px; width: 48px; height: 48px; border-radius: 14px;
+      display: grid; place-items: center; background: #fce9ec; color: var(--red);
+      font-size: 15px; font-weight: 800;
+    }
+    .details { flex: 1; min-width: 0; }
+    .name { display: block; font-size: 17px; font-weight: 700; }
+    .hint { display: block; margin-top: 4px; font-size: 13px; color: var(--muted); }
+    .arrow { color: var(--red); font-size: 24px; line-height: 1; }
+    .foot { text-align: center; color: var(--muted); font-size: 12px; margin-top: 22px; }
+    @media (prefers-reduced-motion: reduce) { .contact { transition: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="brand">
+      <div class="mark" aria-hidden="true">USO</div>
+      <h1>Contactos asesores</h1>
+      <p class="subtitle">Selecciona un contacto para abrir su tarjeta y guardarlo en tu agenda.</p>
+    </header>
+    <section class="cards" aria-label="Lista de contactos">
+      <a class="contact" href="./ana-asesora-uso.vcf" type="text/vcard">
+        <span class="avatar" aria-hidden="true">AI</span>
+        <span class="details"><span class="name">Ana Isabel</span><span class="hint">Abrir tarjeta de contacto</span></span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+      <a class="contact" href="./adrian-asesor-uso.vcf" type="text/vcard">
+        <span class="avatar" aria-hidden="true">A</span>
+        <span class="details"><span class="name">Adrián</span><span class="hint">Abrir tarjeta de contacto</span></span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+      <a class="contact" href="./isabel-asesora-uso.vcf" type="text/vcard">
+        <span class="avatar" aria-hidden="true">I</span>
+        <span class="details"><span class="name">Isabel</span><span class="hint">Abrir tarjeta de contacto</span></span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+    </section>
+    <p class="foot">USO Canarias · Contactos asesores</p>
+  </main>
+</body>
+</html>
